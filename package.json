@@ -1,0 +1,24 @@
+{
+  "name": "my-team--org-chart-",
+  "version": "1.0.0",
+  "description": "A node created app to dynamicall render an HTML based org chart",
+  "main": "createTeam.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aaronpqking/MyTeam-Org-Chart-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aaronpqking/MyTeam-Org-Chart-/issues"
+  },
+  "homepage": "https://github.com/Aaronpqking/MyTeam-Org-Chart-#readme",
+  "dependencies": {
+    "inquirer": "8.2.4",
+    "jest": "^29.0.3"
+  }
+}
