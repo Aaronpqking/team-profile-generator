@@ -1,7 +1,7 @@
 
-const promptEngineer = require('./createTeam');
+const promptEngineer = require('../..');
 const inquirer = require("inquirer");
-const Engineer = require('./engineer');
+const Engineer = require('../../engineer');
 
 
 // describe('test user input' () => {
