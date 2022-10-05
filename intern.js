@@ -1,10 +1,10 @@
-const createTeam = require(".");
+const createTeam = require("../src/")
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateHTML = require("./src/generateHTML");
-const Manager = require("./manager");
-const Engineer = require("./engineer");
-const Intern = require("./intern");
+const Manager = require("./lib/manager");
+const Engineer = require("./lib/engineer");
+const Intern = require("./lib/intern");
 const teamArray = [];
 
 
@@ -140,33 +140,11 @@ function generateCards(teamArray) {
     fs.writeFile("./dist/index.html", generateHTML(teamArray),
         function (err) {
         if (err) throw err;
-        console.log('Saved!');
+        console.log('Done!');
       });
 }
 
 
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     inquirer.prompt(questions)
-//     .then(function (response) {
-//         console.log(response);
-
-//         const content = fileGenerator(response);
-//         console.log(content);
-//         fs.writeFile("./", content, function (err) {
-//             if (err) throw err
-//             console.log("success");
-//         });
-//     });
-// }
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
-
-// generateCards();
 module.exports = (teamArray);
-// module.exports = (generateCards);
+module.exports = (generateCards);

@@ -1,7 +1,7 @@
 
-const promptEngineer = require('../..');
+const promptEngineer = require('..');
 const inquirer = require("inquirer");
-const Engineer = require('../../engineer');
+const Engineer = require('./lib/engineer.js');
 
 
 // describe('test user input' () => {
